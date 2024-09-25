@@ -3,14 +3,20 @@ This project is a simple yet flexible calculator implementation in Java. It adhe
 
 **Features** 
 Basic Operations: Supports ADD, SUBTRACT, MULTIPLY, and DIVIDE.
+
 Chaining: Allows multiple operations to be performed in a chain, giving a more seamless calculation experience.
+
 IoC Compatibility: Built using interfaces, making it easy to integrate with dependency injection frameworks like Spring.
+
 Error Handling: Gracefully handles invalid operations and division by zero.
 
 **Project Structure**
 Operation Enum: Defines the four basic operations (ADD, SUBTRACT, MULTIPLY, DIVIDE).
+
 Calculator Interface: Provides a flexible interface with methods for calculating and chaining operations.
+
 SimpleCalculator Implementation: Implements the Calculator interface, allowing for operation chaining and result retrieval.
+
 Unit Testing: Comprehensive unit tests ensure the calculator functions as expected.
 
 **How to Use**
@@ -28,10 +34,12 @@ Number result = calculator.getResult(); // Result: 12.0
 
 **Extensibility**
 •	You can extend the calculator by adding more operations to the Operation enum and handling them in the calculate() method of the SimpleCalculator class.
+
 •	There is no need to modify the Calculator interface, ensuring that existing functionality remains unaffected.
 
 **IoC Compatibility**
 •	By using the Calculator interface, this implementation is IoC compatible. 
+
 •	You can use dependency injection frameworks like Spring to manage instances of Calculator.
 
 **Requirements**
@@ -51,7 +59,9 @@ Run the unit tests using the following Maven command:
 
 **Technologies Used**
 Java: The main programming language used for implementing the calculator.
+
 JUnit 5: For unit testing.
+
 Maven: For building and managing dependencies
 
 **Notes on Extensibility**
